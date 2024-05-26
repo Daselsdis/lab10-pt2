@@ -6,9 +6,9 @@ public class Cuadricula implements ICuadricula{
     private Casilla[][] casillas = new Casilla[DIM][DIM];
 
     public Cuadricula(){
-        for (Casilla[] casillaArray : casillas) {
-            for (Casilla singleCasilla : casillaArray) {
-                singleCasilla = new Casilla();
+        for (int i = 0; i < casillas.length; i++) {
+            for (int j = 0; j < casillas[0].length; j++) {
+                casillas[i][j]= new Casilla();
             }
         }
     }
